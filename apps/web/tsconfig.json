@@ -1,6 +1,6 @@
 {
-	"extends": ["./.svelte-kit/tsconfig.json", "@repo/typescript-config/base.json"],
+	"extends": ["./.svelte-kit/tsconfig.json", "@repo/tsconfig/svelte"],
 	"compilerOptions": {
-		"moduleResolution": "bundler"
+		"strictNullChecks": true
 	}
 }

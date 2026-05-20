@@ -1,0 +1,17 @@
+{
+	"$schema": "https://turborepo.dev/schema.json",
+	"extends": ["//"],
+	"tasks": {
+		"build": {
+			"inputs": [
+				"src/**",
+				"static/**",
+				"svelte.config.js",
+				"vite.config.ts",
+				"tsconfig.json",
+				"package.json"
+			],
+			"outputs": [".svelte-kit/**", "build/**", ".vercel/**"]
+		}
+	}
+}

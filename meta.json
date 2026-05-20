@@ -1,0 +1,6 @@
+{
+	"name": "Svelte-kit with shadcn",
+	"description": "Turborepo sveltekit starter with shadcn pre-configured",
+	"template": "https://github.com/islamzaoui/turbo-sveltekit-shadcn",
+	"maintainedByCoreTeam": false
+}

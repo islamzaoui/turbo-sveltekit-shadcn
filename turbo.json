@@ -1,14 +1,9 @@
 {
 	"$schema": "https://turbo.build/schema.json",
+	"ui": "tui",
 	"tasks": {
-		"check": {
-			"inputs": ["**/*.{js,ts,css,svelte}"]
-		},
-		"lint": {
-			"inputs": ["**/*.{js,ts,svelte}"]
-		},
-		"lint:fix": {
-			"inputs": ["**/*.{js,ts,svelte}"]
+		"prepare": {
+			"cache": false
 		},
 		"dev": {
 			"cache": false,
@@ -16,12 +11,19 @@
 		},
 		"build": {
 			"dependsOn": ["^build"],
-			"inputs": ["$TURBO_DEFAULT$", ".env*", "!.env.example"],
-			"outputs": [".svelte-kit/**", ".vercel/**"]
+			"inputs": ["$TURBO_DEFAULT$", ".env*", "!.env.example"]
 		},
 		"preview": {
 			"cache": false,
 			"persistent": false
+		},
+		"typecheck": {
+			"inputs": [
+				"src/**/*.{js,ts,jsx,tsx,svelte,d.ts}",
+				"tsconfig.json",
+				"tsconfig.*.json",
+				"package.json"
+			]
 		}
 	}
 }

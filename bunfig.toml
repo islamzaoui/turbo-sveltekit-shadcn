@@ -1,0 +1,4 @@
+[install]
+minimumReleaseAge = 172800
+linker = "hoisted"
+exact = true

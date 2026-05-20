@@ -1,38 +1,11 @@
 {
-	// Enable prettier
-	"prettier.enable": true,
+	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-
-	// Auto fix
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit",
-		"source.organizeImports": "never"
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
 	},
-
-	// Enable eslint for all supported languages
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact",
-		"vue",
-		"html",
-		"markdown",
-		"json",
-		"json5",
-		"jsonc",
-		"yaml",
-		"toml",
-		"xml",
-		"gql",
-		"graphql",
-		"astro",
-		"svelte",
-		"css",
-		"less",
-		"scss",
-		"pcss",
-		"postcss"
-	]
+	"files.associations": {
+		"*.css": "tailwindcss"
+	}
 }

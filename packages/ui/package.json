@@ -1,38 +1,84 @@
 {
 	"name": "@repo/ui",
-	"type": "module",
-	"version": "1.0.0",
 	"private": true,
+	"type": "module",
 	"exports": {
-		"./components/*": {
-			"types": "./src/components/**/*.ts",
-			"svelte": "./src/components/**/*.ts",
-			"default": "./src/components/**/*.ts"
+		"./components/forms": {
+			"types": "./dist/components/forms/index.d.ts",
+			"svelte": "./dist/components/forms/index.js",
+			"import": "./dist/components/forms/index.js"
 		},
-		"./hooks/*": {
-			"types": "./src/hooks/**/*.ts",
-			"svelte": "./src/hooks/**/*.ts",
-			"default": "./src/hooks/**/*.ts"
+		"./components/cn/separator": {
+			"types": "./dist/components/cn/separator/index.d.ts",
+			"svelte": "./dist/components/cn/separator/index.js",
+			"import": "./dist/components/cn/separator/index.js"
 		},
-		"./utils.js": "./src/utils.ts",
-		"./global.css": "./src/global.css"
+		"./components/cn/label": {
+			"types": "./dist/components/cn/label/index.d.ts",
+			"svelte": "./dist/components/cn/label/index.js",
+			"import": "./dist/components/cn/label/index.js"
+		},
+		"./components/cn/input": {
+			"types": "./dist/components/cn/input/index.d.ts",
+			"svelte": "./dist/components/cn/input/index.js",
+			"import": "./dist/components/cn/input/index.js"
+		},
+		"./components/cn/field": {
+			"types": "./dist/components/cn/field/index.d.ts",
+			"svelte": "./dist/components/cn/field/index.js",
+			"import": "./dist/components/cn/field/index.js"
+		},
+		"./components/cn/button": {
+			"types": "./dist/components/cn/button/index.d.ts",
+			"svelte": "./dist/components/cn/button/index.js",
+			"import": "./dist/components/cn/button/index.js"
+		},
+		"./utils": {
+			"types": "./dist/utils.d.ts",
+			"import": "./dist/utils.js"
+		},
+		"./style.css": "./dist/style.css"
 	},
+	"sideEffects": [
+		"dist/style.css"
+	],
 	"scripts": {
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
-		"ui": "bun x shadcn-svelte@latest"
+		"prepare": "svelte-kit sync || echo ''",
+		"dev": "svelte-kit sync && svelte-package --input src --output dist --watch",
+		"build": "svelte-kit sync && svelte-package --input src --output dist && tsx scripts/exports.ts",
+		"exports:watch": "tsx scripts/exports.ts --watch",
+		"typecheck": "svelte-check --tsconfig ./tsconfig.json",
+		"ui": "bun shadcn-svelte"
 	},
 	"devDependencies": {
-		"@repo/eslint-config": "*",
-		"@repo/typescript-config": "*",
-		"clsx": "^2.1.1",
-		"eslint": "^9.20.1",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.1.4",
-		"tailwind-merge": "^3.3.1",
-		"tailwind-variants": "^1.0.0",
-		"tailwindcss": "^4.0.0",
-		"tw-animate-css": "^1.3.0"
-	}
+		"@fontsource-variable/geist": "5.2.9",
+		"@repo/tsconfig": "workspace:*",
+		"@sveltejs/kit": "catalog:",
+		"@sveltejs/package": "catalog:",
+		"@sveltejs/vite-plugin-svelte": "catalog:",
+		"bits-ui": "^2.16.3",
+		"bun-types": "catalog:",
+		"chokidar": "5.0.0",
+		"clsx": "2.1.1",
+		"glob": "13.0.6",
+		"shadcn-svelte": "1.2.7",
+		"svelte-check": "catalog:",
+		"tailwind-merge": "3.6.0",
+		"tailwind-variants": "3.2.2",
+		"tsx": "4.22.0",
+		"tw-animate-css": "1.4.0",
+		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"@lucide/svelte": "catalog:",
+		"@internationalized/date": "catalog:",
+		"svelte": "catalog:",
+		"tailwindcss": "catalog:"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"svelte"
+	]
 }

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://turborepo.dev/schema.json",
+	"extends": ["//"],
+	"tasks": {
+		"dev": {
+			"with": ["exports:watch"]
+		},
+		"build": {
+			"inputs": ["src/**", "tsconfig.json", "package.json"],
+			"outputs": ["dist/**"]
+		},
+		"exports:watch": {
+			"cache": false,
+			"persistent": true,
+			"inputs": ["dist/**", "scripts/exports.ts"],
+			"outputs": ["package.json"]
+		}
+	}
+}

@@ -1,11 +1,12 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# dependencies (bun install)
 node_modules
-.pnp
-.pnp.js
 
-# Output
+# output
+out
+dist
+*.tgz
+.wrangler
+.turbo
 .output
 .vercel
 .netlify
@@ -13,30 +14,29 @@ node_modules
 .svelte-kit
 build
 
-# OS
-.DS_Store
-Thumbs.db
-
-# testing
+# code coverage
 coverage
+*.lcov
 
-# misc
-.DS_Store
-*.pem
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Env
-.env
-.env.*
+# dotenv environment variable files
+.env*
 !.env.example
-!.env.test
 
-# turbo
-.turbo
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# IntelliJ based IDEs
+.idea
+
+# Finder (MacOS) folder config
+.DS_Store
 
 # Vite
 vite.config.js.timestamp-*
