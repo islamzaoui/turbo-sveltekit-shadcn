@@ -24,7 +24,7 @@ async function buildExports() {
 		exports[key] = {
 			types: `./dist/${folder}/index.d.ts`,
 			svelte: `./dist/${folder}/index.js`,
-			import: `./dist/${folder}/index.js`,
+			default: `./dist/${folder}/index.js`,
 		};
 	}
 
@@ -33,7 +33,7 @@ async function buildExports() {
 
 		exports[`./${name}`] = {
 			types: `./dist/${name}.d.ts`,
-			import: `./dist/${file}`,
+			default: `./dist/${file}`,
 		};
 	}
 

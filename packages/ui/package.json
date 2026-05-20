@@ -6,36 +6,36 @@
 		"./components/forms": {
 			"types": "./dist/components/forms/index.d.ts",
 			"svelte": "./dist/components/forms/index.js",
-			"import": "./dist/components/forms/index.js"
+			"default": "./dist/components/forms/index.js"
 		},
 		"./components/cn/separator": {
 			"types": "./dist/components/cn/separator/index.d.ts",
 			"svelte": "./dist/components/cn/separator/index.js",
-			"import": "./dist/components/cn/separator/index.js"
+			"default": "./dist/components/cn/separator/index.js"
 		},
 		"./components/cn/label": {
 			"types": "./dist/components/cn/label/index.d.ts",
 			"svelte": "./dist/components/cn/label/index.js",
-			"import": "./dist/components/cn/label/index.js"
+			"default": "./dist/components/cn/label/index.js"
 		},
 		"./components/cn/input": {
 			"types": "./dist/components/cn/input/index.d.ts",
 			"svelte": "./dist/components/cn/input/index.js",
-			"import": "./dist/components/cn/input/index.js"
+			"default": "./dist/components/cn/input/index.js"
 		},
 		"./components/cn/field": {
 			"types": "./dist/components/cn/field/index.d.ts",
 			"svelte": "./dist/components/cn/field/index.js",
-			"import": "./dist/components/cn/field/index.js"
+			"default": "./dist/components/cn/field/index.js"
 		},
 		"./components/cn/button": {
 			"types": "./dist/components/cn/button/index.d.ts",
 			"svelte": "./dist/components/cn/button/index.js",
-			"import": "./dist/components/cn/button/index.js"
+			"default": "./dist/components/cn/button/index.js"
 		},
 		"./utils": {
 			"types": "./dist/utils.d.ts",
-			"import": "./dist/utils.js"
+			"default": "./dist/utils.js"
 		},
 		"./style.css": "./dist/style.css"
 	},
