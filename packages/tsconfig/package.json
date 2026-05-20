@@ -5,6 +5,6 @@
 		"./svelte": "./tsconfig.svelte.json"
 	},
 	"devDependencies": {
-		"@tsconfig/svelte": "catalog:"
+		"@tsconfig/svelte": "catalog:svelte"
 	}
 }

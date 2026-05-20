@@ -53,16 +53,16 @@
 	"devDependencies": {
 		"@fontsource-variable/geist": "5.2.9",
 		"@repo/tsconfig": "workspace:*",
-		"@sveltejs/kit": "catalog:",
-		"@sveltejs/package": "catalog:",
-		"@sveltejs/vite-plugin-svelte": "catalog:",
+		"@sveltejs/kit": "catalog:svelte",
+		"@sveltejs/package": "catalog:svelte",
+		"@sveltejs/vite-plugin-svelte": "catalog:svelte",
 		"bits-ui": "^2.16.3",
 		"bun-types": "catalog:",
 		"chokidar": "5.0.0",
 		"clsx": "2.1.1",
 		"glob": "13.0.6",
 		"shadcn-svelte": "1.2.7",
-		"svelte-check": "catalog:",
+		"svelte-check": "catalog:svelte",
 		"tailwind-merge": "3.6.0",
 		"tailwind-variants": "3.2.2",
 		"tsx": "4.22.0",
@@ -70,9 +70,9 @@
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {
-		"@lucide/svelte": "catalog:",
+		"@lucide/svelte": "catalog:svelte",
 		"@internationalized/date": "catalog:",
-		"svelte": "catalog:",
+		"svelte": "catalog:svelte",
 		"tailwindcss": "catalog:"
 	},
 	"files": [

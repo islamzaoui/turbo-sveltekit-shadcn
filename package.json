@@ -27,18 +27,22 @@
 		"catalog": {
 			"bun-types": "1.3.13",
 			"typescript": "^6",
-			"@tailwindcss/vite": "4.3.0",
-			"vite": "8.0.13",
-			"@sveltejs/adapter-auto": "7.0.1",
-			"@sveltejs/kit": "2.60.1",
-			"@sveltejs/vite-plugin-svelte": "7.1.2",
-			"svelte-check": "4.4.8",
-			"svelte": "5.55.7",
-			"@sveltejs/package": "2.5.7",
-			"@tsconfig/svelte": "5.0.8",
 			"tailwindcss": "4.3.0",
-			"@lucide/svelte": "1.16.0",
 			"@internationalized/date": "3.12.1"
+		},
+		"catalogs": {
+			"svelte": {
+				"@tailwindcss/vite": "4.3.0",
+				"vite": "8.0.13",
+				"@sveltejs/adapter-auto": "7.0.1",
+				"@sveltejs/kit": "2.60.1",
+				"@sveltejs/vite-plugin-svelte": "7.1.2",
+				"svelte-check": "4.4.8",
+				"svelte": "5.55.7",
+				"@sveltejs/package": "2.5.7",
+				"@tsconfig/svelte": "5.0.8",
+				"@lucide/svelte": "1.16.0"
+			}
 		}
 	},
 	"lint-staged": {

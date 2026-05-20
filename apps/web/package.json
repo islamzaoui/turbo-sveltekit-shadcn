@@ -12,16 +12,16 @@
 	"devDependencies": {
 		"@repo/tsconfig": "workspace:*",
 		"@repo/ui": "workspace:*",
-		"@sveltejs/adapter-auto": "catalog:",
-		"@sveltejs/kit": "catalog:",
-		"@sveltejs/vite-plugin-svelte": "catalog:",
-		"@tailwindcss/vite": "catalog:",
-		"svelte": "catalog:",
-		"@lucide/svelte": "catalog:",
+		"@sveltejs/adapter-auto": "catalog:svelte",
+		"@sveltejs/kit": "catalog:svelte",
+		"@sveltejs/vite-plugin-svelte": "catalog:svelte",
+		"@tailwindcss/vite": "catalog:svelte",
+		"svelte": "catalog:svelte",
+		"@lucide/svelte": "catalog:svelte",
 		"@internationalized/date": "catalog:",
-		"svelte-check": "catalog:",
+		"svelte-check": "catalog:svelte",
 		"tailwindcss": "catalog:",
 		"typescript": "catalog:",
-		"vite": "catalog:"
+		"vite": "catalog:svelte"
 	}
 }
